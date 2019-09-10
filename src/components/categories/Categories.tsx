@@ -6,15 +6,16 @@ import { ITheme, getTheme, mergeStyleSets } from 'office-ui-fabric-react/lib/Sty
 import { createListItems, IExampleItem } from '@uifabric/example-data';
 
 interface AppProps {
-  items: any
+  categories: string[]
 }
 
-const Categories: React.FC<AppProps> = ({items}) => {
+const Categories: React.FC<AppProps> = ({ categories }) => {
+  console.log(categories)
   return(
     <FocusZone>
       <List 
         className='categories-list'
-        items={items}
+        items={categories}
       />
     </FocusZone>
   )
