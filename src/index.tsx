@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { connect, Provider } from 'react-redux'
 import { createStore } from 'redux'
 import { mapStateToProps } from './App'
-import { mapDispatchToProps } from './store/items/actions'
+import { mapDispatchToProps } from './store/index'
 import { rootReducer } from './store/index'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css';

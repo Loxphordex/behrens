@@ -14,7 +14,8 @@ import Categories from './components/categories/Categories'
 
 
 export const mapStateToProps = (state:AppState) => ({
-  items: state.items
+  items: state.items,
+  categories: state.categories
 })
 
 interface AppProps {

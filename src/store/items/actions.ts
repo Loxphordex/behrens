@@ -13,14 +13,3 @@ export function deleteSelectedItem(selectedItem:Item):itemActionTypes {
     payload: selectedItem
   }
 }
-
-export const mapDispatchToProps = (dispatch:any) => {
-  return {
-    add(item:Item) {
-      dispatch(addNewItem(item))
-    },
-    del(item:Item) {
-      dispatch(deleteSelectedItem(item))
-    }
-  }
-}
