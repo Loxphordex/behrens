@@ -5,6 +5,7 @@ import { createStore } from 'redux'
 import { mapStateToProps } from './App'
 import { mapDispatchToProps } from './store/items/actions'
 import { rootReducer } from './store/index'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css';
 import App from './App';
 
@@ -12,5 +13,9 @@ const store = createStore(rootReducer)
 const ConnectedApp = connect(mapStateToProps, mapDispatchToProps)(App)
 
 ReactDOM.render(
-  <Provider store={store}><ConnectedApp /></Provider>, 
+  (
+  <BrowserRouter>
+    <Provider store={store}><ConnectedApp /></Provider>
+  </BrowserRouter>
+  ),
   document.getElementById('root'));

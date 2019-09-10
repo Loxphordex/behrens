@@ -23,8 +23,6 @@ interface AppProps {
 
 export const App: React.FC<AppProps> = ({items, add, del}) => {
 
-  console.log(items.items)
-
   return(
     <div className="App">
       {items.items && items.items.map((item, index) => <div key={index}>{item.name}</div>)}
