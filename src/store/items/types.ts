@@ -9,7 +9,7 @@ export interface Item {
 }
 
 export interface itemState {
-  items:Item[]
+  items: Item[]
 }
 
 interface addItemAction {
