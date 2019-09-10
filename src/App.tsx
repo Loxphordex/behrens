@@ -1,16 +1,11 @@
 import * as React from 'react';
-import { History } from 'history'
-import {useState , useEffect} from 'react';
 import { Route } from 'react-router-dom'
 import { AppState } from './store/index'
-import { itemState } from './store/items/types'
 import { addNewItem, deleteSelectedItem } from './store/items/actions'
-import { DefaultButton, PrimaryButton, Stack, IStackTokens } from 'office-ui-fabric-react'
 import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 
 // Components
 import Header from './components/header/Header'
-import Categories from './components/categories/Categories'
 import Gallery from './components/gallery/Gallery'
 
 /**

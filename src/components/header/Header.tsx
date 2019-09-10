@@ -1,7 +1,5 @@
 import * as React from 'react'
-import { useEffect } from 'react'
 import { History } from 'history'
-import { Link } from 'react-router-dom'
 import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
 
 interface headerProps {
