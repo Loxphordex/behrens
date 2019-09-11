@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { History } from 'history'
-import { Link } from 'react-router-dom'
 import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
 
 interface headerProps {
@@ -9,18 +8,42 @@ interface headerProps {
 
 
 const Header:React.FC<headerProps> = ({ history }) => {
+
   function getItems() {
     return [
       {
-        key: 'categories',
-        name: 'Categories',
+        key: 'living',
+        name: 'Living',
         cacheKey: 'cash',
-        iconProps: {
-          iconName: 'OEM',
-        },
-        ariaLabel: 'Categories',
-        onClick: () => history.push('/categories')
+        ariaLabel: 'Living',
+        onClick: () => history.push('/categories/living')
       },
+      {
+        key: 'dining',
+        name: 'Dining',
+        cacheKey: 'cash',
+        ariaLabel: 'Dining',
+        onClick: () => history.push('/categories/dining')
+      },
+      {
+        key: 'bedroom',
+        name: 'Bedroom',
+        cacheKey: 'cash',
+        ariaLabel: 'Bedroom',
+        onClick: () => history.push('/categories/bedroom')
+      },
+      {
+        key: 'office',
+        name: 'Office',
+        cacheKey: 'cash',
+        ariaLabel: 'Office',
+        onClick: () => history.push('/categories/office')
+      },
+    ]
+  }
+
+  function getFarItems() {
+    return [
       {
         key: 'cart',
         name: 'Cart',
@@ -35,10 +58,12 @@ const Header:React.FC<headerProps> = ({ history }) => {
   }
 
   return(
-    <CommandBar 
-      items={[]}
-      farItems={getItems()}
-    />
+    <header role='heading'>
+      <CommandBar 
+        items={getItems()}
+        farItems={getFarItems()}
+      />
+    </header>
   )
 }
 

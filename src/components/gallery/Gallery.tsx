@@ -1,14 +1,19 @@
 import * as React from 'react'
+import {RouteComponentProps, withRouter} from "react-router";
 
 interface galleryProps {
-  category:string,
-  products:any[]
+  products: any[]
 }
 
-const Gallery: React.FC<galleryProps> = ({ category, products }) => {
+const Gallery: React.FC<RouteComponentProps<any> & galleryProps> = (props) => {
+  
+
+  console.log(props)
   return(
     <div>test</div>
   )
+    
+
 }
 
-export default Gallery
+export default withRouter(Gallery)
