@@ -58,10 +58,12 @@ const Header:React.FC<headerProps> = ({ history }) => {
   }
 
   return(
-    <CommandBar 
-      items={getItems()}
-      farItems={getFarItems()}
-    />
+    <header role='heading'>
+      <CommandBar 
+        items={getItems()}
+        farItems={getFarItems()}
+      />
+    </header>
   )
 }
 

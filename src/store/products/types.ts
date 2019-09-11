@@ -4,7 +4,8 @@ export interface Product {
   id:number
   cost:number
   name:string
-  category:string
+  category:string,
+  imageUrl:string,
 }
 
 

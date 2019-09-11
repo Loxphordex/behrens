@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Route } from 'react-router-dom'
 import { AppState } from './store/index'
+import { productState } from './store/products/types'
 import { addNewItem, deleteSelectedItem } from './store/items/actions'
 import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 
@@ -21,7 +22,7 @@ import Gallery from './components/gallery/Gallery'
 
 export const mapStateToProps = (state:AppState) => ({
   items: state.items,
-  categories: state.categories
+  products: state.products,
 })
 
 interface AppProps {
@@ -30,6 +31,7 @@ interface AppProps {
   deleteSelectedItem?:typeof deleteSelectedItem
   add:any
   del:any
+  products:productState
 }
 
 
@@ -46,7 +48,7 @@ export const App: React.FC<AppProps> = ({items, add, del}) => {
   return(
     <div className="App">
       <Route path='/' render={({ history }) => <Header history={history} />} />
-      <Route path='/categories/:category' render={() => <Gallery products={categories} category={'placeholder'} />} />
+      <Route path='/categories/:category' render={() => <Gallery products={[]} />} />
     </div>
   );
 }
