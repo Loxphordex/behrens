@@ -42,8 +42,8 @@ interface AppProps {
 export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) => {
   function mapProductsToState() {
     productData.map(product => {
-      console.log(product)
       addProd(product)
+      return product
     })
   }
 
@@ -56,7 +56,7 @@ export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) =>
   return(
     <div className="App">
       <Route path='/' render={({ history }) => <Header history={history} />} />
-      <Route path='/categories/:category' render={() => <Gallery products={products.products} productData={productData} imagesStore={imagesStore} />} />
+      <Route path='/categories/:category' render={() => <Gallery products={products.products} imagesStore={imagesStore} />} />
     </div>
   );
 }
