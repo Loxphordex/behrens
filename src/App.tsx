@@ -34,17 +34,6 @@ interface AppProps {
 
 
 export const App: React.FC<AppProps> = ({items, add, del}) => {
-
-  // function addItem(item:object) {
-  //   add(item)
-  // }
-
-  // function deleteItem(item:object) {
-  //   del(item)
-  // }
-
-  // const stackTokens:IStackTokens = { childrenGap: 40 }
-
   initializeIcons()
 
   const categories = [
@@ -58,10 +47,6 @@ export const App: React.FC<AppProps> = ({items, add, del}) => {
     <div className="App">
       <Route path='/' render={({ history }) => <Header history={history} />} />
       <Route path='/categories/:category' render={() => <Gallery products={categories} category={'placeholder'} />} />
-      {/* {items.items && items.items.map((item, index) => <div key={index}>{item.name}</div>)}
-      <Stack horizontal={true} tokens={stackTokens}>
-        <PrimaryButton text='Add To Cart' onClick={() => addItem({id:1, cost:10, name:'Chair', category: 'Seating'})} />
-      </Stack> */}
     </div>
   );
 }
