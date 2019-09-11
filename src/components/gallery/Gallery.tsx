@@ -9,7 +9,6 @@ interface galleryProps {
 
 const Gallery: React.FC<RouteComponentProps<any> & galleryProps> = (props) => {
   
-  console.log(props)
   const category = props.location.pathname.slice(12)
   const { products, imagesStore, history } = props
   
