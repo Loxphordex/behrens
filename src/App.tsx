@@ -10,15 +10,17 @@ import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 import Header from './components/header/Header'
 import Gallery from './components/gallery/Gallery'
 
+// Data
+import { productData } from './data/product-data'
+import { imagesStore } from './images/images-export'
+
 /**
  * TODO
-  Gather images
-  Setup category list
   Create dummy data
   Create furniture lists
   Create item details list
   Create landing page
-  Use hooks somehow (probably for unmounting from selected category component)
+  Use hooks somehow
  */
 
 export const mapStateToProps = (state:AppState) => ({
@@ -38,23 +40,23 @@ interface AppProps {
 
 
 export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) => {
-  initializeIcons()
+  function mapProductsToState() {
+    productData.map(product => {
+      console.log(product)
+      addProd(product)
+    })
+  }
 
-  // useEffect(() => {
-    
-  // })
-
-  const categories = [
-    'Living',
-    'Dining',
-    'Bedroom',
-    'Office',
-  ]
+  useEffect(() => {
+    console.log('effect used')
+    mapProductsToState()
+    initializeIcons()
+  }, [])
 
   return(
     <div className="App">
       <Route path='/' render={({ history }) => <Header history={history} />} />
-      <Route path='/categories/:category' render={() => <Gallery products={products.products} />} />
+      <Route path='/categories/:category' render={() => <Gallery products={products.products} productData={productData} imagesStore={imagesStore} />} />
     </div>
   );
 }

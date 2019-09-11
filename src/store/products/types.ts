@@ -5,7 +5,7 @@ export interface Product {
   cost:number
   name:string
   category:string,
-  imageUrl:string,
+  dataName:string,
 }
 
 

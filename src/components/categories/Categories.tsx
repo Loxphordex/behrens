@@ -10,7 +10,6 @@ interface AppProps {
 }
 
 const Categories: React.FC<AppProps> = ({ categories }) => {
-  console.log(categories)
   return(
     <FocusZone>
       <List 
