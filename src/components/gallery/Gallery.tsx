@@ -5,15 +5,15 @@ interface galleryProps {
   products: any[]
 }
 
-class Gallery extends React.Component<RouteComponentProps<any> & galleryProps> {
+const Gallery: React.FC<RouteComponentProps<any> & galleryProps> = (props) => {
   
-  render() {
-    console.log(this.props)
-    return(
-      <div>test</div>
-    )
+
+  console.log(props)
+  return(
+    <div>test</div>
+  )
     
-  }
+
 }
 
 export default withRouter(Gallery)

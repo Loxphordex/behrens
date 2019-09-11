@@ -1,4 +1,5 @@
-import * as React from 'react';
+import * as React from 'react'
+import { useEffect } from 'react'
 import { Route } from 'react-router-dom'
 import { AppState } from './store/index'
 import { productState } from './store/products/types'
@@ -32,11 +33,16 @@ interface AppProps {
   add:any
   del:any
   products:productState
+  addProd:any
 }
 
 
-export const App: React.FC<AppProps> = ({items, add, del}) => {
+export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) => {
   initializeIcons()
+
+  // useEffect(() => {
+    
+  // })
 
   const categories = [
     'Living',
@@ -48,7 +54,7 @@ export const App: React.FC<AppProps> = ({items, add, del}) => {
   return(
     <div className="App">
       <Route path='/' render={({ history }) => <Header history={history} />} />
-      <Route path='/categories/:category' render={() => <Gallery products={[]} />} />
+      <Route path='/categories/:category' render={() => <Gallery products={products.products} />} />
     </div>
   );
 }
