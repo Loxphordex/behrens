@@ -12,6 +12,16 @@ const Header:React.FC<headerProps> = ({ history }) => {
   function getItems() {
     return [
       {
+        key: 'home',
+        name: '',
+        cacheKey: 'cash',
+        iconProps: {
+          iconName: 'HomeSolid',
+        },
+        ariaLabel: 'Home',
+        onClick: () => history.push('/')
+      },
+      {
         key: 'living',
         name: 'Living',
         cacheKey: 'cash',

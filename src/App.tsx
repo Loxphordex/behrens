@@ -8,6 +8,7 @@ import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 
 // Components
 import Header from './components/header/Header'
+import { LandingPage } from './components/landing/LandingPage'
 import Gallery from './components/gallery/Gallery'
 
 // Data
@@ -16,11 +17,10 @@ import { imagesStore } from './images/images-export'
 
 /**
  * TODO
-  Create dummy data
-  Create furniture lists
   Create item details list
-  Create landing page
-  Use hooks somehow
+  Utilize shopping cart
+  Create cart page
+  (optional) add more styling to landing page
  */
 
 export const mapStateToProps = (state:AppState) => ({
@@ -40,6 +40,7 @@ interface AppProps {
 
 
 export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) => {
+  initializeIcons()
   function mapProductsToState() {
     productData.map(product => {
       addProd(product)
@@ -48,14 +49,13 @@ export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) =>
   }
 
   useEffect(() => {
-    console.log('effect used')
     mapProductsToState()
-    initializeIcons()
   }, [])
 
   return(
     <div className="App">
       <Route path='/' render={({ history }) => <Header history={history} />} />
+      <Route exact={true} path='/' render={({ history }) => <LandingPage history={history} />} />
       <Route path='/categories/:category' render={() => <Gallery products={products.products} imagesStore={imagesStore} />} />
     </div>
   );
