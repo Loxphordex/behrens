@@ -5,6 +5,7 @@ import { Item } from '../../store/items/types'
 import { findImage } from '../../images/images-export'
 import { Image, ImageFit, IImageProps } from 'office-ui-fabric-react/lib/Image';
 import { Stack, IStackStyles, IStackTokens, IStackItemStyles } from 'office-ui-fabric-react/lib/Stack';
+import { FontSizes } from '@uifabric/fluent-theme/lib/fluent/FluentType';
 
 interface CartItemProps {
   item: Item
@@ -22,13 +23,16 @@ export const CartItem: React.FC<CartItemProps> = ({item, del, history}) => {
 
   const stackStyles: IStackStyles = {
     root: {
-      flexFlow: 'row'
+      margin: '1% auto',
+      maxWidth: '500px',
     }
   };
 
   const itemStyles: React.CSSProperties = {
     padding: 5,
-    display: 'inline-block'
+    display: 'inline-block',
+    margin: 'auto',
+    textAlign: 'center',
   };
 
   useEffect(() => {
@@ -38,20 +42,24 @@ export const CartItem: React.FC<CartItemProps> = ({item, del, history}) => {
 
   return(
     <div key={item.id}>
-      <div>
-        <Stack horizontal={true} styles={stackStyles}>
-            <Image
-              src={image}
-              alt={item.name}
-              {...imageProps as any}
-            />
+      <Stack horizontal={true} styles={stackStyles}>
+        <Image
+          src={image}
+          alt={item.name}
+          {...imageProps as any}
+        />  
+        <div style={{...itemStyles, textAlign: 'left'}}>
+          <h2 style={{ margin: 0 }}>{item.name}</h2>
+          <div>{item.category}</div>
+        </div>  
 
-            <div style={itemStyles}>{item.name}</div>
+        <div style={{...itemStyles, alignSelf: 'center' }}>
+          <div style={{ fontSize: FontSizes.size32, color: '#a4373a', textAlign: 'right'}}>
+            {`$${item.cost}`}
 
-        </Stack>
-
-        
-      </div>
+          </div>
+        </div>  
+      </Stack>
     </div>
   )
 }
