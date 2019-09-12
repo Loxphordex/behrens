@@ -13,7 +13,6 @@ const Header:React.FC<headerProps> = ({ history }) => {
     return [
       {
         key: 'home',
-        name: '',
         cacheKey: 'cash',
         iconProps: {
           iconName: 'HomeSolid',

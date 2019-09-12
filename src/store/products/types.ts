@@ -1,11 +1,13 @@
 export const ADD_PRODUCT = 'ADD_PRODUCT'
+export const GET_PRODUCT = 'GET_PRODUCT'
 
 export interface Product {
   id:number
   cost:number
   name:string
-  category:string,
-  dataName:string,
+  category:string
+  dataName:string
+  description:string
 }
 
 
@@ -18,4 +20,9 @@ interface addProduct {
   product: Product
 }
 
-export type productActionTypes = addProduct
+interface getProduct {
+  type: typeof GET_PRODUCT,
+  id:number
+}
+
+export type productActionTypes = addProduct | getProduct

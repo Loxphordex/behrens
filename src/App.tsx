@@ -5,12 +5,14 @@ import { AppState } from './store/index'
 import { productState } from './store/products/types'
 import { addNewItem, deleteSelectedItem } from './store/items/actions'
 import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
+import { setIconOptions } from 'office-ui-fabric-react/lib/Styling';
 
 // Components
 import Header from './components/header/Header'
 import { LandingPage } from './components/landing/LandingPage'
 import Gallery from './components/gallery/Gallery'
 import { Cart } from './components/cart/Cart'
+import ProductInfo from './components/product-info/ProductInfo'
 
 // Data
 import { productData } from './data/product-data'
@@ -19,15 +21,16 @@ import { imagesStore } from './images/images-export'
 /**
  * TODO
   Create item details list
-    -Smaller image on left side
-    -Description of item
     -Add to cart button
   Utilize shopping cart
   Create cart page
     -Display all selected items
     -Show total price plus tax
-    -Set up purchase simulation (confirmation, clear cart)
-    -Set up fake credit card form
+  Create checkout page
+    -Card form
+    -Address
+    -Add tax to total
+    -Checkout confirmation, then clear cart
   (optional) add more styling to landing page
  */
 
@@ -49,6 +52,7 @@ interface AppProps {
 
 export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) => {
   initializeIcons()
+  setIconOptions({ disableWarnings: true });
   function mapProductsToState() {
     productData.map(product => {
       addProd(product)
@@ -66,6 +70,7 @@ export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) =>
       <Route exact={true} path='/' render={({ history }) => <LandingPage history={history} />} />
       <Route path='/categories/:category' render={() => <Gallery products={products.products} imagesStore={imagesStore} />} />
       <Route path='/cart' render={() => <Cart items={items} del={del} />} />
+      <Route path='/info/:id' render={() => <ProductInfo products={products} add={add} />} />
     </div>
   );
 }

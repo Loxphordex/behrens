@@ -29,3 +29,11 @@ export const imagesStore = {
   Supply_Starter_Pack,
   Throw_Pillows,
 }
+
+export function findImage(dataName:string) {
+  const store:any = imagesStore
+  const image = store[dataName]
+  return (image)
+    ? image
+    : `No image exists with dataname: ${dataName}`
+}
