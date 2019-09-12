@@ -43,7 +43,6 @@ const ProductInfo: React.FC<RouteComponentProps<any> & InfoProps> = (props) => {
   const imageProps: IImageProps = {
     imageFit: ImageFit.contain,
     height: 200,
-    width: 300
   }
  
   return(
@@ -51,6 +50,8 @@ const ProductInfo: React.FC<RouteComponentProps<any> & InfoProps> = (props) => {
       {products && product && image && <div className='info-container'>
         <Image 
           src={image}
+          alt={product.dataName}
+          {...imageProps as any}
         />
       </div>}
     </section>

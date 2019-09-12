@@ -5,8 +5,9 @@ export interface Product {
   id:number
   cost:number
   name:string
-  category:string,
-  dataName:string,
+  category:string
+  dataName:string
+  description:string
 }
 
 

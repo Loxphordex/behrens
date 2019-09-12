@@ -5,6 +5,14 @@ export const productData = [
     name: 'Ancient Gray',
     dataName: 'Ancient_Gray',
     category: 'living',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+      arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+      In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+      Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+      Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+      Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 2,
@@ -12,6 +20,14 @@ export const productData = [
     name: 'Blocky Comfort',
     dataName: 'Blocky_Comfort',
     category: 'living',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 3,
@@ -19,6 +35,14 @@ export const productData = [
     name: 'Leather Chunk',
     dataName: 'Leather_Chunk',
     category: 'living',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 4,
@@ -26,6 +50,14 @@ export const productData = [
     name: 'Coffee Table Pair',
     dataName: 'Coffee_Table_Pair',
     category: 'living',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 5,
@@ -33,6 +65,14 @@ export const productData = [
     name: 'All Purpose Chair',
     dataName: 'All_Purpose_Chair',
     category: 'dining',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 6,
@@ -40,6 +80,14 @@ export const productData = [
     name: 'Basic Dining Set',
     dataName: 'Basic_Dining_Set',
     category: 'dining',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 7,
@@ -47,6 +95,14 @@ export const productData = [
     name: 'Posh Dining Set',
     dataName: 'Posh_Dining_Set',
     category: 'dining',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 8,
@@ -54,6 +110,14 @@ export const productData = [
     name: 'Fancy Bedroom Set',
     dataName: 'Fancy_Bedroom_Set',
     category: 'bedroom',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 9,
@@ -61,6 +125,14 @@ export const productData = [
     name: 'Spread of Stripes',
     dataName: 'Spread_of_Stripes',
     category: 'bedroom',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 10,
@@ -68,6 +140,14 @@ export const productData = [
     name: 'Fancy Bedroom Pillow',
     dataName: 'Fancy_Bedroom_Pillow',
     category: 'bedroom',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 11,
@@ -75,6 +155,14 @@ export const productData = [
     name: 'Squishable Round',
     dataName: 'Squishable_Round',
     category: 'bedroom',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 12,
@@ -82,6 +170,14 @@ export const productData = [
     name: 'Throw Pillows',
     dataName: 'Throw_Pillows',
     category: 'bedroom',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 13,
@@ -89,12 +185,28 @@ export const productData = [
     name: 'Dusty Desk',
     dataName: 'Dusty_Desk',
     category: 'office',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   },
   {
     id: 14,
     cost: 12,
     name: 'Supply Starter Pack',
     dataName: 'Supply_Starter_Pack',
-    category: 'office'
+    category: 'office',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
+    arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
+    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
+    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
+    Convallis a cras semper auctor neque vitae tempus quam.`,
   }
 ]
