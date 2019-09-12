@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { useState, useEffect } from 'react'
+import { History } from 'history'
 import { productState } from '../../store/products/types'
 import {RouteComponentProps, withRouter} from "react-router";
 import { PrimaryButton } from 'office-ui-fabric-react'
@@ -10,13 +11,11 @@ import { findImage } from '../../images/images-export'
 interface InfoProps {
   products: productState
   add: any
-  getProd: any
 }
 
 const ProductInfo: React.FC<RouteComponentProps<any> & InfoProps> = (props) => {
   
-  
-  const { products, add, getProd } = props
+  const { products, add, history } = props
   const [id, setId] = useState(0)
   const [image, setImage] = useState('')
   const [product, setProduct] = useState({
@@ -46,7 +45,12 @@ const ProductInfo: React.FC<RouteComponentProps<any> & InfoProps> = (props) => {
     }
 
     handleProductProps()
-  }, [products, id])
+  }, [products, id, props.match.params.id])
+
+  async function handleAddItem() {
+    await add(product)
+    history.push('/cart')
+  }
 
   const imageProps: IImageProps = {
     imageFit: ImageFit.contain,
@@ -73,7 +77,10 @@ const ProductInfo: React.FC<RouteComponentProps<any> & InfoProps> = (props) => {
         <div style={{ fontSize: FontSizes.size24 }}>{`$${product.cost}`}</div>
         <p style={{ fontSize: FontSizes.size12 }}>{product.description}</p>
         <div style={{ display: 'block', margin: '10% auto', textAlign: 'center' }}>
-          <PrimaryButton text='Add to Cart' />
+          <PrimaryButton 
+            text='Add to Cart'
+            onClick={() => handleAddItem()} 
+          />
         </div>
       </div>}
     </section>

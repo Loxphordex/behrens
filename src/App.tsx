@@ -5,6 +5,7 @@ import { AppState } from './store/index'
 import { productState } from './store/products/types'
 import { addNewItem, deleteSelectedItem } from './store/items/actions'
 import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
+import { setIconOptions } from 'office-ui-fabric-react/lib/Styling';
 
 // Components
 import Header from './components/header/Header'
@@ -46,12 +47,12 @@ interface AppProps {
   del:any
   products:productState
   addProd:any
-  getProd:any
 }
 
 
-export const App: React.FC<AppProps> = ({items, add, del, addProd, getProd, products}) => {
+export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) => {
   initializeIcons()
+  setIconOptions({ disableWarnings: true });
   function mapProductsToState() {
     productData.map(product => {
       addProd(product)
@@ -69,7 +70,7 @@ export const App: React.FC<AppProps> = ({items, add, del, addProd, getProd, prod
       <Route exact={true} path='/' render={({ history }) => <LandingPage history={history} />} />
       <Route path='/categories/:category' render={() => <Gallery products={products.products} imagesStore={imagesStore} />} />
       <Route path='/cart' render={() => <Cart items={items} del={del} />} />
-      <Route path='/info/:id' render={() => <ProductInfo products={products} add={add} getProd={getProd} />} />
+      <Route path='/info/:id' render={() => <ProductInfo products={products} add={add} />} />
     </div>
   );
 }

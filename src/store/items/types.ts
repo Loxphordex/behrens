@@ -5,7 +5,9 @@ export interface Item {
   id:number
   cost:number
   name:string
+  dataName:string
   category:string
+  description:string
 }
 
 export interface itemState {

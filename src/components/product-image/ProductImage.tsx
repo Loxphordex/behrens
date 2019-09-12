@@ -34,11 +34,11 @@ export const ProductImage: React.FC<PIProps> = (props) => {
         <div style={{ cursor: 'pointer' }} className='basic-info'>
           <div 
             style={{ fontSize: FontSizes.size20, fontWeight: 'bold', cursor: 'pointer' }}>
-            { product.name }
+            {product.name}
           </div>
           <div 
             style={{ fontSize: FontSizes.size18, cursor: 'pointer' }}>
-            { `$${product.cost}` }
+            {`$${product.cost}`}
           </div>
         </div>
       </div>
