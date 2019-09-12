@@ -67,7 +67,7 @@ export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) =>
       <Route exact={true} path='/' render={({ history }) => <LandingPage history={history} />} />
       <Route path='/categories/:category' render={() => <Gallery products={products.products} imagesStore={imagesStore} />} />
       <Route path='/cart' render={() => <Cart items={items} del={del} />} />
-      <Route path='/info/:id' render={() => <ProductInfo products={products} />} />
+      <Route path='/info/:id' render={() => <ProductInfo products={products} add={add} />} />
     </div>
   );
 }

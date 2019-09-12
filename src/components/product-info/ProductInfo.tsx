@@ -5,12 +5,13 @@ import {RouteComponentProps, withRouter} from "react-router";
 
 interface InfoProps {
   products: productState
+  add: any
 }
 
 const ProductInfo: React.FC<RouteComponentProps<any> & InfoProps> = (props) => {
   
   
-  const { products } = props
+  const { products, add } = props
   const [id, setId] = useState(props.match.params.id)
   const [product, setProduct] = useState({})
 
