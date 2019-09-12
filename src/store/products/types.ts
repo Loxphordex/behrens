@@ -1,4 +1,5 @@
 export const ADD_PRODUCT = 'ADD_PRODUCT'
+export const GET_PRODUCT = 'GET_PRODUCT'
 
 export interface Product {
   id:number
@@ -18,4 +19,9 @@ interface addProduct {
   product: Product
 }
 
-export type productActionTypes = addProduct
+interface getProduct {
+  type: typeof GET_PRODUCT,
+  id:number
+}
+
+export type productActionTypes = addProduct | getProduct

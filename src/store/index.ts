@@ -6,7 +6,7 @@ import { Item } from './items/types'
 import { Product } from './products/types'
 
 import { addNewItem, deleteSelectedItem } from './items/actions'
-import { addProduct } from './products/actions'
+import { addProduct, getProduct } from './products/actions'
 
 export const rootReducer = combineReducers({
   items: itemReducer,
@@ -23,6 +23,9 @@ export const mapDispatchToProps = (dispatch:any) => {
     },
     addProd(product:Product) {
       dispatch(addProduct(product))
+    },
+    getProd(id:number) {
+      dispatch(getProduct(id))
     }
   }
 }

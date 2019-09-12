@@ -45,10 +45,11 @@ interface AppProps {
   del:any
   products:productState
   addProd:any
+  getProd:any
 }
 
 
-export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) => {
+export const App: React.FC<AppProps> = ({items, add, del, addProd, getProd, products}) => {
   initializeIcons()
   function mapProductsToState() {
     productData.map(product => {
@@ -67,7 +68,7 @@ export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) =>
       <Route exact={true} path='/' render={({ history }) => <LandingPage history={history} />} />
       <Route path='/categories/:category' render={() => <Gallery products={products.products} imagesStore={imagesStore} />} />
       <Route path='/cart' render={() => <Cart items={items} del={del} />} />
-      <Route path='/info/:id' render={() => <ProductInfo products={products} add={add} />} />
+      <Route path='/info/:id' render={() => <ProductInfo products={products} add={add} getProd={getProd} />} />
     </div>
   );
 }
