@@ -5,6 +5,7 @@ import {RouteComponentProps, withRouter} from "react-router";
 import { PrimaryButton } from 'office-ui-fabric-react'
 import { Image, ImageFit, IImageProps } from 'office-ui-fabric-react/lib/Image';
 import { FontSizes } from '@uifabric/fluent-theme/lib/fluent/FluentType';
+import { Text } from 'office-ui-fabric-react/lib/Text';
 import { findImage } from '../../images/images-export'
 
 interface InfoProps {
@@ -74,7 +75,10 @@ const ProductInfo: React.FC<RouteComponentProps<any> & InfoProps> = (props) => {
         </h3>
         <h2 style={{ margin: 0 }}>{product.name}</h2>
         <div style={{ fontSize: FontSizes.size24 }}>{`$${product.cost}`}</div>
-        <p style={{ fontSize: FontSizes.size12 }}>{product.description}</p>
+        {/* <p style={{ fontSize: FontSizes.size12 }}>{product.description}</p> */}
+        <Text>
+          {product.description}
+        </Text>
         <div style={{ display: 'block', margin: '10% auto', textAlign: 'center' }}>
           <PrimaryButton 
             text='Add to Cart'

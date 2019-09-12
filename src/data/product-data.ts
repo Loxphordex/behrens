@@ -9,10 +9,7 @@ export const productData = [
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
       arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-      In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-      Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-      Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-      Convallis a cras semper auctor neque vitae tempus quam.`,
+      In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie.`,
   },
   {
     id: 2,
@@ -24,10 +21,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 3,
@@ -39,10 +33,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 4,
@@ -54,10 +45,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 5,
@@ -69,10 +57,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 6,
@@ -85,9 +70,7 @@ export const productData = [
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
     In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    `,
   },
   {
     id: 7,
@@ -99,10 +82,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 8,
@@ -114,10 +94,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 9,
@@ -129,10 +106,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 10,
@@ -144,10 +118,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 11,
@@ -159,10 +130,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 12,
@@ -174,10 +142,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 13,
@@ -189,10 +154,7 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   },
   {
     id: 14,
@@ -204,9 +166,6 @@ export const productData = [
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Quam pellentesque nec nam aliquam. Sagittis aliquam malesuada bibendum 
     arcu vitae elementum curabitur. Massa tincidunt nunc pulvinar sapien. 
-    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. 
-    Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. 
-    Vitae suscipit tellus mauris a diam maecenas. Laoreet id donec ultrices tincidunt. 
-    Convallis a cras semper auctor neque vitae tempus quam.`,
+    In metus vulputate eu scelerisque. At consectetur lorem donec massa sapien faucibus et molestie. `,
   }
 ]

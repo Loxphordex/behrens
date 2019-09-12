@@ -20,8 +20,6 @@ import { imagesStore } from './images/images-export'
 
 /**
  * TODO
-  Create item details list
-    -Add to cart button
   Utilize shopping cart
   Create cart page
     -Display all selected items
@@ -69,7 +67,7 @@ export const App: React.FC<AppProps> = ({items, add, del, addProd, products}) =>
       <Route path='/' render={({ history }) => <Header history={history} />} />
       <Route exact={true} path='/' render={({ history }) => <LandingPage history={history} />} />
       <Route path='/categories/:category' render={() => <Gallery products={products.products} imagesStore={imagesStore} />} />
-      <Route path='/cart' render={() => <Cart items={items} del={del} />} />
+      <Route path='/cart' render={({ history }) => <Cart items={items} del={del} history={history} />} />
       <Route path='/info/:id' render={() => <ProductInfo products={products} add={add} />} />
     </div>
   );
