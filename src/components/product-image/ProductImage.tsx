@@ -31,7 +31,7 @@ export const ProductImage: React.FC<PIProps> = (props) => {
           alt={product.name}
           {...imageProps as any}
         />
-        <div style={{ cursor: 'pointer' }} className='basic-info'>
+        <div style={{ cursor: 'pointer', textAlign: 'left', margin: '5%' }} className='basic-info'>
           <div 
             style={{ fontSize: FontSizes.size20, fontWeight: 'bold', cursor: 'pointer' }}>
             {product.name}

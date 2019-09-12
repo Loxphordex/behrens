@@ -16,7 +16,8 @@ const Gallery: React.FC<RouteComponentProps<any> & galleryProps> = (props) => {
     <div 
       className='ms-Grid' dir='ltr'
       style={{ width: '85%', margin: 'auto' }}>
-      <div className='ms-Grid-row'>
+      <div className='ms-Grid-row'
+        style={{ textAlign: 'center' }}>
         { products && products.map(product => {
           if (product.category === category) {
   

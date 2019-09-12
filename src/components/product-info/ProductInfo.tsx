@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { useState, useEffect } from 'react'
-import { History } from 'history'
 import { productState } from '../../store/products/types'
 import {RouteComponentProps, withRouter} from "react-router";
 import { PrimaryButton } from 'office-ui-fabric-react'
