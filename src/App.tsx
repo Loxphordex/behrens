@@ -20,15 +20,16 @@ import { imagesStore } from './images/images-export'
 /**
  * TODO
   Create item details list
-    -Smaller image on left side
-    -Description of item
     -Add to cart button
   Utilize shopping cart
   Create cart page
     -Display all selected items
     -Show total price plus tax
-    -Set up purchase simulation (confirmation, clear cart)
-    -Set up fake credit card form
+  Create checkout page
+    -Card form
+    -Address
+    -Add tax to total
+    -Checkout confirmation, then clear cart
   (optional) add more styling to landing page
  */
 
