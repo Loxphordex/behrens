@@ -12,17 +12,26 @@ const ProductInfo: React.FC<RouteComponentProps<any> & InfoProps> = (props) => {
   
   
   const { products, add } = props
-  const [id, setId] = useState(props.match.params.id)
+  const [id, setId] = useState(0)
   const [product, setProduct] = useState({})
+  console.log(products)
 
   useEffect(() => {
-    if (products.products && id) {
-      console.log('effect' +products.products[id-1])
-      const currentProduct = products.products[id-1]
-      console.log('currentProduct: ' +currentProduct)
-      return
+    async function handleId() {
+      const paramsId = props.match.params.id
+      setId(paramsId)
     }
-  }, [])
+
+    async function handleProduct() {
+      const prod = products.products[id-1]
+      setProduct(prod)
+    }
+
+    handleId()
+    handleProduct()
+  }, [products])
+
+  //props.match.params.id
  
   return(
     <section>Info</section>
