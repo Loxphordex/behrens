@@ -4,6 +4,7 @@ import { History } from 'history'
 import { Item } from '../../store/items/types'
 import { findImage } from '../../images/images-export'
 import { Image, ImageFit, IImageProps } from 'office-ui-fabric-react/lib/Image';
+import { Stack, IStackStyles, IStackTokens, IStackItemStyles } from 'office-ui-fabric-react/lib/Stack';
 
 interface CartItemProps {
   item: Item
@@ -15,8 +16,19 @@ export const CartItem: React.FC<CartItemProps> = ({item, del, history}) => {
   const [image, setImage] = useState('')
   const imageProps: IImageProps = {
     imageFit: ImageFit.contain,
-    height: 200,
-    width: 300
+    height: 100,
+    width: 100
+  };
+
+  const stackStyles: IStackStyles = {
+    root: {
+      flexFlow: 'row'
+    }
+  };
+
+  const itemStyles: React.CSSProperties = {
+    padding: 5,
+    display: 'inline-block'
   };
 
   useEffect(() => {
@@ -25,13 +37,20 @@ export const CartItem: React.FC<CartItemProps> = ({item, del, history}) => {
   }, [item])
 
   return(
-    <div className='ms-Grid-row' key={item.id}>
-      <div className='ms-Grid-col ms-sm6'>
-        <Image 
-          src={image}
-          alt={item.name}
-          {...imageProps as any}
-        />
+    <div key={item.id}>
+      <div>
+        <Stack horizontal={true} styles={stackStyles}>
+            <Image
+              src={image}
+              alt={item.name}
+              {...imageProps as any}
+            />
+
+            <div style={itemStyles}>{item.name}</div>
+
+        </Stack>
+
+        
       </div>
     </div>
   )

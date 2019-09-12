@@ -13,7 +13,7 @@ export const Cart: React.FC<CartProps> = ({ items, del, history }) => {
 
   return(
     <section>
-      <div className='cart-list ms-Grid'>
+      <div>
         {items && items.items.map(item => {
           return(
             <CartItem item={item} del={del} key={item.id} history={history} />
