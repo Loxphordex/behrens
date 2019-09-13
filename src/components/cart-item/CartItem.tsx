@@ -4,7 +4,7 @@ import { History } from 'history'
 import { Item } from '../../store/items/types'
 import { findImage } from '../../images/images-export'
 import { Image, ImageFit, IImageProps } from 'office-ui-fabric-react/lib/Image';
-import { Stack, IStackStyles, IStackTokens, IStackItemStyles } from 'office-ui-fabric-react/lib/Stack';
+import { Stack, IStackStyles } from 'office-ui-fabric-react/lib/Stack';
 import { FontSizes } from '@uifabric/fluent-theme/lib/fluent/FluentType';
 
 interface CartItemProps {

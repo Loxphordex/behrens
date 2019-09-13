@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { Route } from 'react-router-dom'
 import { AppState } from './store/index'
 import { productState } from './store/products/types'
-import { addNewItem, deleteSelectedItem } from './store/items/actions'
+import { itemState } from './store/items/types'
 import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 import { setIconOptions } from 'office-ui-fabric-react/lib/Styling';
 
@@ -20,9 +20,7 @@ import { imagesStore } from './images/images-export'
 
 /**
  * TODO
-  Utilize shopping cart
-  Create cart page
-    -Display all selected items
+  Cart page
     -Show total price plus tax
   Create checkout page
     -Card form
@@ -38,9 +36,7 @@ export const mapStateToProps = (state:AppState) => ({
 })
 
 interface AppProps {
-  items: any
-  addNewItem?:typeof addNewItem
-  deleteSelectedItem?:typeof deleteSelectedItem
+  items:itemState
   add:any
   del:any
   products:productState
